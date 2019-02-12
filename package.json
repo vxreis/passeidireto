@@ -1,0 +1,23 @@
+{
+	"name": "passeidireto",
+	"version": "1.0.0",
+	"description": "Challenge Passei Direto",
+	"main": "save_file.js",
+	"dependencies": {
+		"chromedriver": "^2.46.0",
+		"env2": "^2.2.2",
+		"geckodriver": "^1.14.1",
+		"iedriver": "^3.14.1",
+		"nightwatch": "^0.9.21",
+		"selenium-server": "^3.141.59"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/vxreis/passeidireto.git"
+	},
+	"scripts": {
+		"test": "nightwatch -c nightwatch.conf.js -e chrome"
+	},
+	"author": "vanessa",
+	"license": "ISC"
+}
