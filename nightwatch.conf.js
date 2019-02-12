@@ -2,7 +2,6 @@
 var seleniumServer = require('selenium-server');
 var chromedriver = require('chromedriver');
 var geckodriver = require('geckodriver');
-var iedriver = require('iedriver');
 
 var config = {
 	src_folders: [
@@ -19,8 +18,7 @@ var config = {
 		log_path: 'selenium_log',
 		cli_args: {
 			'webdriver.chrome.driver': chromedriver.path,
-			'webdriver.gecko.driver': geckodriver.path,
-			'webdriver.edge.driver': iedriver.path
+			'webdriver.gecko.driver': geckodriver.path
 		}
 	},
 	test_workers: {
@@ -53,22 +51,6 @@ var config = {
 		chrome: {
 			desiredCapabilities: {
 				browserName: 'chrome',
-				javascriptEnabled: true,
-				acceptSslCerts: true,
-				nativeEvents: true
-			}
-		},
-		ie11: {
-			desiredCapabilities: {
-				browserName: 'internet explorer',
-				javascriptEnabled: true,
-				acceptSslCerts: true,
-				nativeEvents: true
-			}
-		},
-		edge: {
-			desiredCapabilities: {
-				browserName: 'MicrosoftEdge',
 				javascriptEnabled: true,
 				acceptSslCerts: true,
 				nativeEvents: true
